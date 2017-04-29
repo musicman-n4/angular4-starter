@@ -5,6 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AccordionModule } from 'primeng/primeng';     //accordion and accordion tab
+import { MenuItem } from 'primeng/primeng';            //api
+import { ButtonModule } from 'primeng/primeng';
+import { DataTableModule, SharedModule } from 'primeng/primeng';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +17,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ButtonModule,
+    DataTableModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
