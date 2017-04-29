@@ -10,6 +10,11 @@ import { MenuItem } from 'primeng/primeng';            //api
 import { ButtonModule } from 'primeng/primeng';
 import { DataTableModule, SharedModule } from 'primeng/primeng';
 
+import { AppService } from './app.service';
+
+import 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -22,7 +27,7 @@ import { DataTableModule, SharedModule } from 'primeng/primeng';
     DataTableModule,
     SharedModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

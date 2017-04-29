@@ -5,17 +5,20 @@ import { AppService } from './app.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   providers: [AppService],
 })
 
 export class AppComponent implements OnInit {
-  cars: Car[];
+  errorMessage: string;
+  cars: Car;
   title = 'app works!';
 
   constructor(private appService: AppService) { }
 
   ngOnInit() {
-    this.appService.getCarsSmall().subscribe(cars => this.cars = cars);
+    this.appService.getCarsSmall().subscribe(
+      cars => this.cars = cars,
+      error => this.errorMessage = <any>error);
   }
 }
