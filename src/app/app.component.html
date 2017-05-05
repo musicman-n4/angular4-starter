@@ -1,19 +1,104 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-48">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
 
-<button pButton type="button" label="Click" style="color:#555"></button>
+  </div>
 
-<div class="ui-g">
-  <div class="ui-g-4">Col1</div>
-  <div class="ui-g-4">Col2</div>
-  <div class="ui-g-4">Col3</div>
+  <div class="row">
+    <div class="col-lg-10">
+      <button type="button" class="btn btn-primary btn-block">保存</button>
+    </div>
+    <div class="col-lg-10">
+      <p-dropdown [style]="{'width':'100%'}" [options]="cities" [(ngModel)]="selectedCity" [filter]="true" [autoWidth]="false"></p-dropdown>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+
+  <div class="row">
+    <div class="col-lg-48">
+      <p-dataTable [value]="cars" scrollable="true" scrollHeight="500px">
+        <p-column [style]="{'width':'93px'}" field="vin" header="Vin" [sortable]="true" [filter]="true"></p-column>
+        <p-column [style]="{'width':'93px'}" field="year" header="Year"></p-column>
+        <p-column [style]="{'width':'93px'}" field="brand" header="Brand"></p-column>
+        <p-column [style]="{'width':'93px'}" field="color" header="Color"></p-column>
+        <p-column [style]="{'width':'93px'}" field="vin" header="Vin"></p-column>
+        <p-column [style]="{'width':'93px'}" field="year" header="Year"></p-column>
+        <p-column [style]="{'width':'93px'}" field="brand" header="Brand"></p-column>
+        <p-column [style]="{'width':'93px'}" field="color" header="Color"></p-column>
+        <p-column [style]="{'width':'93px'}" field="vin" header="Vin"></p-column>
+        <p-column [style]="{'width':'93px'}" field="year" header="Year"></p-column>
+        <p-column [style]="{'width':'93px'}" field="brand" header="Brand"></p-column>
+        <p-column [style]="{'width':'93px'}" field="color" header="Color"></p-column>
+        <p-column [style]="{'width':'93px'}" field="vin" header="Vin"></p-column>
+        <p-column [style]="{'width':'93px'}" field="year" header="Year"></p-column>
+        <p-column [style]="{'width':'93px'}" field="brand" header="Brand"></p-column>
+        <p-column [style]="{'width':'93px'}" field="color" header="Color"></p-column>
+        <p-column [style]="{'width':'93px'}" field="vin" header="Vin"></p-column>
+        <p-column [style]="{'width':'93px'}" field="year" header="Year"></p-column>
+        <p-column [style]="{'width':'93px'}" field="brand" header="Brand"></p-column>
+        <p-column [style]="{'width':'93px'}" field="color" header="Color"></p-column>
+      </p-dataTable>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+  </div>
 </div>
-
-
-<p-dataTable [value]="cars">
-  <p-column field="vin" header="Vin"></p-column>
-  <p-column field="year" header="Year"></p-column>
-  <p-column field="brand" header="Brand"></p-column>
-  <p-column field="color" header="Color"></p-column>
-</p-dataTable>
