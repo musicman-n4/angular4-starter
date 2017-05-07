@@ -1,13 +1,18 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-lg-48">
-      <h1>
-        {{title}}
-      </h1>
+      <h1>Issue Tracker</h1>
+      <ul>
+        <li><a routerLink="home">Home</a></li>
+        <li><a routerLink="pages">Pages</a></li>
+      </ul>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </div>
 
   </div>
 
+  <!--
   <div class="row">
     <div class="col-lg-10">
       <button type="button" class="btn btn-primary btn-block">保存</button>
@@ -101,4 +106,5 @@
     <div class="col-md-1">.col-md-1</div>
     <div class="col-md-1">.col-md-1</div>
   </div>
+  -->
 </div>

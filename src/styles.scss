@@ -10,7 +10,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 html {
-  font-size: $font-size-root !important;
+  font-size: $font-size-root;
   min-height: 100%;
   height: 100%;
 }
@@ -22,8 +22,8 @@ body {
 }
 
 .ui-widget {
-  font-family: $font-family-sans-serif !important;
-  font-size: $font-size-root !important;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-root;
 }
 
 .row {

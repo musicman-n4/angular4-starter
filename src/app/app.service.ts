@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Headers, Http, Response } from '@angular/http';
+import { Http } from '@angular/http';
 import { Car } from './car';
 import { Observable } from 'rxjs/Observable';
 // import 'rxjs/add/operator/toPromise';

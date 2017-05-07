@@ -17,9 +17,27 @@ import { AppService } from './app.service';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
 
+import { environment } from '../environments/environment';
+import { HomeComponent } from './home/home.component';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+// import { IssueComponent } from './pages/issue/issue.component';
+// import { WikiComponent } from './pages/wiki/wiki.component';
+
+import { Routing, AppRoutingProviders } from './app.routes';
+import { FooterComponent } from './footer/footer.component';
+
+import { PagesModule } from './pages/pages.module';
+
+import { GuardsHomeService } from './home/guards-home.service';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +48,16 @@ import { Observable } from 'rxjs/Observable';
     SharedModule,
     DropdownModule,
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    PagesModule,
+    Routing
   ],
-  providers: [AppService],
+  providers: [
+    AppRoutingProviders,
+    GuardsHomeService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
